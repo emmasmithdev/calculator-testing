@@ -25,4 +25,10 @@ describe('calculator', function () {
     assert.equal(15.0, calculator.runningTotal)
   })
 
+  it('can divide 2 numbers', function(){
+    calculator.previousTotal = "21"
+    calculator.divide("7")
+    assert.equal(3.0, calculator.runningTotal)
+  })
+
 });
