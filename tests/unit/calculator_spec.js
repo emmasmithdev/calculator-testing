@@ -19,4 +19,10 @@ describe('calculator', function () {
     assert.equal(3.0, calculator.runningTotal)
   })
 
+  it('can multiply 2 numbers', function(){
+    calculator.previousTotal = "3"
+    calculator.multiply("5")
+    assert.equal(15.0, calculator.runningTotal)
+  })
+
 });
